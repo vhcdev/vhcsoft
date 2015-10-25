@@ -24,7 +24,7 @@ RUN wget https://www.dropbox.com/s/m4l810a502wlrya/mveo-0.1.0.jar?dl=0 -O app.ja
 #ADD sound.equalizer-0.1.0.jar app.jar
 RUN bash -c 'touch /app.jar'
 #RUN java -jar app.jar
-EXPOSE 80
+EXPOSE 8080
 
 COPY docker-entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
